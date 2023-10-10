@@ -1,0 +1,73 @@
+﻿@if (Peliculas is null)
+{
+    @* <p>Cargando las películas</p> *@
+    @* @ChildContent *@
+
+    @if(Cargando is null)
+    {
+        <p>Cargando...</p>
+    }
+    else
+    {
+        @Cargando
+    }    
+}
+else if(Peliculas.Count == 0)
+{
+    @if(NoHayRegistros is null)
+    {
+        <p>No hay películas para mostrar</p>
+    }
+    else
+    {
+        @NoHayRegistros
+    }    
+    @* <p>No hay películas para mostrar</p> *@
+}
+else
+{
+    @* <input type="checkbox" @onchange="@(() => MostrarBotones = !MostrarBotones)" /> *@
+    <input type="checkbox" @bind="MostrarBotones" />
+    <span>Mostrar botones</span>
+
+    @foreach (var pelicula in Peliculas)
+    {
+        @* <PeliculaIndividual Pelicula="pelicula" MostrarBotones="MostrarBotones"/> *@
+        <PeliculaIndividual Pelicula="pelicula" EliminarPelicula="EliminarPelicula" MostrarBotones="MostrarBotones" />
+    }
+}
+
+@code {
+    [Parameter]
+    [EditorRequired]
+    public List<Pelicula>? Peliculas { get; set; }
+
+    [Parameter]
+    // public RenderFragment ChildContent { get; set; } = null!;
+    public RenderFragment Cargando { get; set; } = null!;
+
+    public RenderFragment NoHayRegistros { get; set; } = null!;
+
+    // bool MostrarBotones = false;
+    bool MostrarBotones = true;
+
+    private void EliminarPelicula(Pelicula pelicula)
+    {
+        Console.WriteLine("Eliminando una película");
+        Peliculas!.Remove(pelicula);
+
+    }
+
+    // protected override async Task OnInitializedAsync()
+    // {
+    //     await Task.Delay(3000);
+    //     Peliculas = ObtenerPeliculas();
+    // }
+
+
+    // void ManejarClickBoton()
+    // {
+    //     Console.WriteLine("Me han clickeado");
+
+    // }
+}

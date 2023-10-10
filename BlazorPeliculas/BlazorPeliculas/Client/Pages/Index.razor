@@ -1,0 +1,63 @@
+﻿@page "/"
+
+
+<div>
+    <h3>Películas</h3>
+    @* <ListadoPeliculas Peliculas="ObtenerPeliculas()"/> *@
+    <ListadoPeliculas Peliculas="ObtenerPeliculas()">
+        <Cargando>
+            <p>Cargando...</p>
+        </Cargando>       
+    </ListadoPeliculas>
+</div>
+
+<div>
+    <h3>Películas</h3>    
+    <ListadoPeliculas Peliculas="ObtenerPeliculas()">        
+        <NoHayRegistros>
+            <p>NO HAY!</p>
+        </NoHayRegistros>
+    </ListadoPeliculas>
+</div>
+
+@* <BindEvento /> *@
+
+@* <BindGetSetDemo   /> *@
+
+<BindAfterDemo />
+
+<div>
+    <h3>Crear nueva película</h3>
+
+  @*   <EjemploTextBox @attributes="@(new Dictionary<string, object>()
+        {
+            {"placeholder", "nuevo placeholder"},
+            {"disabled", "true"}
+        }
+    )"/> *@
+
+    @* <EjemploTextBox @attributes="EjemploTextboxParametros" /> *@
+
+    <EjemploTextBox placeholder="placeholder index" />
+</div>
+
+
+@code{
+    string nombre = "Felipe";
+    private Dictionary<string, object> EjemploTextboxParametros = new Dictionary<string, object>()
+        {
+            {"placeholder", "nuevo placeholder"},
+            {"disabled", "true"}
+        };
+    
+
+    List<Pelicula> ObtenerPeliculas()
+    {
+        return new List<Pelicula>()
+        {            
+            new Pelicula{Titulo = "Wakanda Forever", FechaLanzamiento = new DateTime(2022, 11, 11)},
+            new Pelicula{Titulo = "Moana", FechaLanzamiento = new DateTime(2016, 11, 23)},
+            new Pelicula{Titulo = "Inception", FechaLanzamiento = new DateTime(2010, 7, 16)}
+        };
+    }
+}

@@ -1,0 +1,11 @@
+C:\Users\jhon\OneDrive\Documentos\Blazor\UdemyProyecto\BlazorPeliculas\BlazorPeliculas\Shared\bin\Debug\net7.0\BlazorPeliculas.Shared.deps.json
+C:\Users\jhon\OneDrive\Documentos\Blazor\UdemyProyecto\BlazorPeliculas\BlazorPeliculas\Shared\bin\Debug\net7.0\BlazorPeliculas.Shared.dll
+C:\Users\jhon\OneDrive\Documentos\Blazor\UdemyProyecto\BlazorPeliculas\BlazorPeliculas\Shared\bin\Debug\net7.0\BlazorPeliculas.Shared.pdb
+C:\Users\jhon\OneDrive\Documentos\Blazor\UdemyProyecto\BlazorPeliculas\BlazorPeliculas\Shared\obj\Debug\net7.0\BlazorPeliculas.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jhon\OneDrive\Documentos\Blazor\UdemyProyecto\BlazorPeliculas\BlazorPeliculas\Shared\obj\Debug\net7.0\BlazorPeliculas.Shared.AssemblyInfoInputs.cache
+C:\Users\jhon\OneDrive\Documentos\Blazor\UdemyProyecto\BlazorPeliculas\BlazorPeliculas\Shared\obj\Debug\net7.0\BlazorPeliculas.Shared.AssemblyInfo.cs
+C:\Users\jhon\OneDrive\Documentos\Blazor\UdemyProyecto\BlazorPeliculas\BlazorPeliculas\Shared\obj\Debug\net7.0\BlazorPeliculas.Shared.csproj.CoreCompileInputs.cache
+C:\Users\jhon\OneDrive\Documentos\Blazor\UdemyProyecto\BlazorPeliculas\BlazorPeliculas\Shared\obj\Debug\net7.0\BlazorPeliculas.Shared.dll
+C:\Users\jhon\OneDrive\Documentos\Blazor\UdemyProyecto\BlazorPeliculas\BlazorPeliculas\Shared\obj\Debug\net7.0\refint\BlazorPeliculas.Shared.dll
+C:\Users\jhon\OneDrive\Documentos\Blazor\UdemyProyecto\BlazorPeliculas\BlazorPeliculas\Shared\obj\Debug\net7.0\BlazorPeliculas.Shared.pdb
+C:\Users\jhon\OneDrive\Documentos\Blazor\UdemyProyecto\BlazorPeliculas\BlazorPeliculas\Shared\obj\Debug\net7.0\ref\BlazorPeliculas.Shared.dll
