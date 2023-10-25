@@ -10,7 +10,7 @@ namespace BlazorPeliculas.Client.Pages
         ServicioSingleton singleton { get; set; } = null!;
 
         [Inject]
-        IJSRuntime js {  get; set; } = null!;
+        protected IJSRuntime JS { get; set; } = null!;
 
         private int currentCount = 0;
         private static int currentCountStatic = 0;       
@@ -20,7 +20,7 @@ namespace BlazorPeliculas.Client.Pages
             currentCount++;
             currentCountStatic = currentCount;
             singleton.Valor = currentCount;
-            await js.InvokeVoidAsync("pruebaPuntoNetStatic");
+            await JS.InvokeVoidAsync("pruebaPuntoNetStatic");
         }
 
         List<Pelicula> ObtenerPeliculas()

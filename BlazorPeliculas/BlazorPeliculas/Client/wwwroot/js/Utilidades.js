@@ -1,6 +1,8 @@
 ﻿function pruebaPuntoNetStatic() {
-    DotNet.invokeMethodAync("BlazorPeliculas.Client", "ObtenerCurrentCount")
-        .then(resultado => {
-            console.log('conteo desde javascript ' + resultado);
-        })
+    DotNet.invokeMethodAsync("BlazoBlazorPeliculas.Client", "ObtenerCurrentCount")
+        .then(
+            resultado => {
+                console.log("Conteo desde JS " + resultado);
+            }
+        );
 }
