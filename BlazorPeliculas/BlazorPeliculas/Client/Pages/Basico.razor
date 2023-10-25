@@ -12,16 +12,7 @@
 </div>
 
 <div>
-    <h3>Películas</h3>
-
-    @* <h4>Ejemplo For</h4> *@
-    @*  @for (int i = 0; i < Peliculas.Count; i++)
-    {
-    <div>
-    <p>@(i+1)) Título: <b>@Peliculas[i].Titulo</b></p>
-    <p>Fecha lanzamiento: <b>@Peliculas[i].FechaLanzamiento.ToString("dd MMM yyyy")</b></p>
-    </div>
-    } *@
+    <h3>Películas</h3> 
 
     @if (Peliculas is null)
     {
@@ -49,8 +40,7 @@
 @code {
     string nombre = "Felipe";
 
-    Pelicula WakandaForever { get { return ObtenerPelicula(); } }
-    //List<Pelicula> Peliculas {get { return ObtenerPeliculas(); }}
+    Pelicula WakandaForever { get { return ObtenerPelicula(); } }    
     List<Pelicula>? Peliculas { get; set; }
 
     protected override async Task OnInitializedAsync()
@@ -78,8 +68,6 @@
             new Pelicula{Titulo = "Inception", FechaLanzamiento = new DateTime(2010, 7, 16)}
         };
     }
-
-
 
     void ManejarClickBoton()
     {

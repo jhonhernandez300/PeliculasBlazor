@@ -1,63 +1,32 @@
 ﻿@page "/"
-
-
-<div>
-    <h3>Películas</h3>
-    @* <ListadoPeliculas Peliculas="ObtenerPeliculas()"/> *@
-    <ListadoPeliculas Peliculas="ObtenerPeliculas()">
-        <Cargando>
-            <p>Cargando...</p>
-        </Cargando>       
-    </ListadoPeliculas>
-</div>
+@inject IRepositorio repositorio
 
 <div>
     <h3>Películas</h3>    
-    <ListadoPeliculas Peliculas="ObtenerPeliculas()">        
-        <NoHayRegistros>
-            <p>NO HAY!</p>
-        </NoHayRegistros>
-    </ListadoPeliculas>
+    <ListadoPeliculas Peliculas="Peliculas"/>            
 </div>
 
-@* <BindEvento /> *@
-
-@* <BindGetSetDemo   /> *@
-
-<BindAfterDemo />
-
-<div>
-    <h3>Crear nueva película</h3>
-
-  @*   <EjemploTextBox @attributes="@(new Dictionary<string, object>()
-        {
-            {"placeholder", "nuevo placeholder"},
-            {"disabled", "true"}
-        }
-    )"/> *@
-
-    @* <EjemploTextBox @attributes="EjemploTextboxParametros" /> *@
-
-    <EjemploTextBox placeholder="placeholder index" />
-</div>
+<button @onclick="AgregarPelicula">Agregar película</button>
 
 
 @code{
+    public List<Pelicula> Peliculas { get; set; } = null!;
+
+    protected override void OnInitialized()
+    {
+        Peliculas = repositorio.ObtenerPeliculas();
+    }
+
     string nombre = "Felipe";
+
     private Dictionary<string, object> EjemploTextboxParametros = new Dictionary<string, object>()
-        {
+     {
             {"placeholder", "nuevo placeholder"},
             {"disabled", "true"}
-        };
-    
+     };       
 
-    List<Pelicula> ObtenerPeliculas()
+    private void AgregarPelicula()
     {
-        return new List<Pelicula>()
-        {            
-            new Pelicula{Titulo = "Wakanda Forever", FechaLanzamiento = new DateTime(2022, 11, 11)},
-            new Pelicula{Titulo = "Moana", FechaLanzamiento = new DateTime(2016, 11, 23)},
-            new Pelicula{Titulo = "Inception", FechaLanzamiento = new DateTime(2010, 7, 16)}
-        };
+        Peliculas!.Add(new Pelicula { Titulo = "Nuevo", FechaLanzamiento = DateTime.Today });   
     }
 }

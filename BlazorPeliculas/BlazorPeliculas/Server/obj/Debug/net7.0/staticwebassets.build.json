@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YNIy3MRi2vnaRmwB+RaINVNWTsiVvUf12UnaaVhTSPs=",
+  "Hash": "YaD84xPph2wf8Zqhrc8hQ3DBJmdTFuM/XOYBoxzYASo=",
   "Source": "BlazorPeliculas.Server",
   "BasePath": "_content/BlazorPeliculas.Server",
   "Mode": "Default",
@@ -7218,6 +7218,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\jhon\\OneDrive\\Documentos\\Blazor\\UdemyProyecto\\BlazorPeliculas\\BlazorPeliculas\\Client\\wwwroot\\js\\Utilidades.js",
+      "SourceId": "BlazorPeliculas.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\jhon\\OneDrive\\Documentos\\Blazor\\UdemyProyecto\\BlazorPeliculas\\BlazorPeliculas\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "js/Utilidades.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Utilidades.js"
     }
   ]
 }

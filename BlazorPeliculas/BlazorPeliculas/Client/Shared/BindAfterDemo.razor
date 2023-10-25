@@ -1,14 +1,6 @@
 ﻿<h3>BindAfterDemo</h3>  
 
-@* <input type="text" @bind="busqueda" @bind:after="Buscar"  /> *@
-@* <input type="text" @bind="busqueda" @bind:after="Buscar.result" /> *@
-@* <input type="text" @bind="busqueda" @bind:after="@(async () => await Buscar(busqueda))" /> *@
-@* <input type="text" @onchange="@Buscar" /> *@
-@* <input type="text" @bind="@busqueda" /> *@
-<input type="text" @onchange="@Buscar" />
-@* <input type="text" @bind="busqueda"  @onchange="@Buscar" /> *@
-
-
+<input type="text" @bind="busqueda" @bind:after="Buscar"/>
 
 <p>
     Personas encontradas: 
@@ -22,13 +14,10 @@
 </ul>
 
 @code {
-    private string busqueda = string.Empty;
-    // private string busqueda { get; set; } = "";
+    private string busqueda = string.Empty;    
     private List<string> personasEncontradas = new List<string>();
-
-    // private async Task Buscar(string valor)
-    private async Task Buscar()
-    // async void Buscar(ChangeEventArgs valor)
+    
+    private async Task Buscar()    
     {
         var personas = new List<string>
         {
@@ -37,7 +26,7 @@
             "Claudia Rodriguez",
             "Claudia Celeste"
         };
-        await Task.Delay(1000);
+        await Task.Delay(100);
         personasEncontradas = personas.Where(p => p.Contains(busqueda)).ToList();
     }
 }
