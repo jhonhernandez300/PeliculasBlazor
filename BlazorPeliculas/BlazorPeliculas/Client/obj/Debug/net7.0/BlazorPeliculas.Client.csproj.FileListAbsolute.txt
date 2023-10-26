@@ -834,3 +834,4 @@ C:\Users\jhon\OneDrive\Documentos\Blazor\UdemyProyecto\BlazorPeliculas\BlazorPel
 C:\Users\jhon\OneDrive\Documentos\Blazor\UdemyProyecto\BlazorPeliculas\BlazorPeliculas\Client\obj\Debug\net7.0\refint\BlazorPeliculas.Client.dll
 C:\Users\jhon\OneDrive\Documentos\Blazor\UdemyProyecto\BlazorPeliculas\BlazorPeliculas\Client\obj\Debug\net7.0\BlazorPeliculas.Client.pdb
 C:\Users\jhon\OneDrive\Documentos\Blazor\UdemyProyecto\BlazorPeliculas\BlazorPeliculas\Client\obj\Debug\net7.0\ref\BlazorPeliculas.Client.dll
+C:\Users\jhon\OneDrive\Documentos\Blazor\UdemyProyecto\BlazorPeliculas\BlazorPeliculas\Client\obj\Debug\net7.0\scopedcss\Pages\Counter.razor.rz.scp.css

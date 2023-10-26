@@ -1,58 +1,23 @@
 ﻿@inject IJSRuntime js
-
-@if (Peliculas is null)
-{
    
-}
-else
-{   
-    <input type="checkbox" @bind="MostrarBotones" />
-    <span>
-        Mostrar botones
-    </span>
-
-    <ListadoGenerico Listado="Peliculas">
+<div style="display: flex; flex-wrap: wrap; align-items: center;">
+        <ListadoGenerico Listado="Peliculas">
         <HayRegistros Context="pelicula">
             <PeliculaIndividual Pelicula="pelicula" 
-                EliminarPelicula="EliminarPelicula" 
-            MostrarBotones="MostrarBotones" />
+                EliminarPelicula="EliminarPelicula" />                  
         </HayRegistros>
     </ListadoGenerico>
-}
+</div>
+  
+
 
 @code {
     [Parameter]
     [EditorRequired]
     public List<Pelicula>? Peliculas { get; set; }
-
-    protected override void OnInitialized()
-    {
-        Console.WriteLine("OnInitialized");
-    }
-
-    protected override void OnParametersSet()
-    {
-        Console.WriteLine("OnParametersSet");
-    }
-
-    protected override void OnAfterRender(bool primerRenderizacion)
-    {
-        Console.WriteLine("OnAfterRender - " + primerRenderizacion);
-    }
-
-    protected override bool ShouldRender()
-    {
-        Console.WriteLine("ShouldRender " );
-        return true;
-    }
-
-    bool MostrarBotones = true;
-
+     
     private async Task EliminarPelicula(Pelicula pelicula)
     {
-        // var confirmado = await js.InvokeAsync<bool>
-        //     ("confirm", $"Desea borrar la película {pelicula.Titulo}?");
-
         var confirmado = await js.Confirm($"Desea borrar la película {pelicula.Titulo}?");
 
         if(confirmado)

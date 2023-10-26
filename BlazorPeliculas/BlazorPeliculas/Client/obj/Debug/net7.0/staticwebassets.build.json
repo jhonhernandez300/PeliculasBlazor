@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TANcAbJnsE5pFkMz1vqmp+CWc82P0Ok2u9lTJHHVBjs=",
+  "Hash": "VzFwYvGAGuU6+s6Lvkqt79QgOLc1Z+xQm8u7f2VrUwQ=",
   "Source": "BlazorPeliculas.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -7223,6 +7223,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\jhon\\OneDrive\\Documentos\\Blazor\\UdemyProyecto\\BlazorPeliculas\\BlazorPeliculas\\Client\\wwwroot\\js\\Counter.js",
+      "SourceId": "BlazorPeliculas.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jhon\\OneDrive\\Documentos\\Blazor\\UdemyProyecto\\BlazorPeliculas\\BlazorPeliculas\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "js/Counter.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Counter.js"
     },
     {
       "Identity": "C:\\Users\\jhon\\OneDrive\\Documentos\\Blazor\\UdemyProyecto\\BlazorPeliculas\\BlazorPeliculas\\Client\\wwwroot\\js\\Utilidades.js",

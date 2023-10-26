@@ -73,6 +73,10 @@
       "PackagePath": "staticwebassets\\index.html"
     },
     {
+      "Id": "C:\\Users\\jhon\\OneDrive\\Documentos\\Blazor\\UdemyProyecto\\BlazorPeliculas\\BlazorPeliculas\\Client\\wwwroot\\js\\Counter.js",
+      "PackagePath": "staticwebassets\\js\\Counter.js"
+    },
+    {
       "Id": "C:\\Users\\jhon\\OneDrive\\Documentos\\Blazor\\UdemyProyecto\\BlazorPeliculas\\BlazorPeliculas\\Client\\wwwroot\\js\\Utilidades.js",
       "PackagePath": "staticwebassets\\js\\Utilidades.js"
     },

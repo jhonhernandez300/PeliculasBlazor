@@ -6,27 +6,11 @@
     <ListadoPeliculas Peliculas="Peliculas"/>            
 </div>
 
-<button @onclick="AgregarPelicula">Agregar película</button>
-
-
 @code{
-    public List<Pelicula> Peliculas { get; set; } = null!;
+    public List<Pelicula> Peliculas { get; set; } = null!;  
 
     protected override void OnInitialized()
     {
         Peliculas = repositorio.ObtenerPeliculas();
-    }
-
-    string nombre = "Felipe";
-
-    private Dictionary<string, object> EjemploTextboxParametros = new Dictionary<string, object>()
-     {
-            {"placeholder", "nuevo placeholder"},
-            {"disabled", "true"}
-     };       
-
-    private void AgregarPelicula()
-    {
-        Peliculas!.Add(new Pelicula { Titulo = "Nuevo", FechaLanzamiento = DateTime.Today });   
-    }
+    } 
 }
